@@ -62,7 +62,6 @@ buttons.forEach((button) => {
             slides.children[0].insertAdjacentElement('beforebegin',slides.children[slides.children.length -1]);
              newAciveSlide = 2;
         }
-        console.log(newAciveSlide);
         delete activeSlide.dataset.active;
         slides.children[newAciveSlide].dataset.active = true;
     });
