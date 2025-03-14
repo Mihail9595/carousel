@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Carousel</title>
+  </head>
+  <body>
+    <section aria-label="Pictures">
+
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-button-carousel="prev">&#8592</button>
+            <button class="carousel-button next" data-button-carousel="next">&#8594</button>
+
+            <ul data-slides>
+                <li class="slide slide-1" ><img src="./img/original.jpg" alt="Pictures"></li>
+                <li class="slide slide-2"><img src="./img/priroda.jpg" alt="Pictures"></li>
+                <li class="slide slide-3" data-active><img src="./img/resize-1.jpg" alt="Pictures"></li>
+                <li class="slide slide-4"><img src="./img/resize.jpg" alt="Pictures"></li>
+                <li class="slide slide-5"><img src="./img/ророл.jpg" alt="Pictures"></li>
+            </ul>
+
+        </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

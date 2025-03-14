@@ -1,0 +1,70 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  /* width: 400px; */
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slide {
+  /* position: absolute; */
+  /* inset: 0; */
+  opacity: 0.3;
+}
+
+.slide[data-active] {
+  opacity: 1;
+}
+
+img {
+  display: block;
+  width: 300px;
+  height: 170px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  top: 50%;
+
+  transform: translateY(-50%);
+  color: rgb(0, 0, 0);
+
+  &:hover {
+    color: rgb(160, 156, 163);
+  }
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
